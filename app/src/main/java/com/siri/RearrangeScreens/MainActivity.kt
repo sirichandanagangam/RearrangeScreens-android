@@ -6,11 +6,10 @@ import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.siri.RearrangeScreensSDK.ScreenUtils
-
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var screenNames: Array<String> = arrayOf("Screen1", "Screen2", "Screen3")
+        val screenNames: Array<String> = arrayOf("Screen1", "Screen2", "Screen3")
         ScreenUtils.takeScreenNames(this@MainActivity, screenNames)
         setContentView(R.layout.activity_main)
         val str_Array: Unit = ScreenUtils.returnScreenOrder()
