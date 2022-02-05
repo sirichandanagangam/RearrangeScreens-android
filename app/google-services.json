@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "616944017165",
+    "project_id": "rearrangescreens",
+    "storage_bucket": "rearrangescreens.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616944017165:android:4e46c37435e262b03f9a44",
+        "android_client_info": {
+          "package_name": "com.siri.RearrangeScreens"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616944017165-sfis21jkv0o7ckp9amoc44j7oacs8fv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC80NmHdPk8O3PRTcYg2F-7Ja-06ROEyPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616944017165-sfis21jkv0o7ckp9amoc44j7oacs8fv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
