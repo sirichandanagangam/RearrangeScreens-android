@@ -1,0 +1,3 @@
+rootProject.name='RearrangeScreens'
+include ':app'
+include ':RearrangeScreensModule'
