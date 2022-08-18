@@ -1,25 +1,56 @@
 package com.siri.RearrangeScreens
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.siri.RearrangeScreensSDK.ScreenUtils
+import com.google.firebase.firestore.FirebaseFirestore
+import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
+    lateinit var db: FirebaseFirestore
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val screenNames: Array<String> = arrayOf("Screen1", "Screen2", "Screen3")
-        ScreenUtils.takeScreenNames(this@MainActivity, screenNames)
         setContentView(R.layout.activity_main)
-        val str_Array = ScreenUtils.returnScreenOrder()
-        Log.d("received screen order ", "Recieved screen order is :" + (str_Array))
-        val button: Button = findViewById(R.id.simpleButton)
-        button.setOnClickListener {
-            val i = Intent(this, SecondActivity::class.java)
-            startActivity(i)
-        }
+    }
+
+    fun getFromDb() {
+        var orderFromFirebase = ArrayList<Int>()
+        db.collection("ScreenOrder")
+            .document("Order")
+            .get()
+            .addOnSuccessListener { documentReference ->
+                val data = documentReference.data?.get("list") as ArrayList<String>
+                for (order in data) {
+                    orderFromFirebase.add(Integer.parseInt(order))
+                }
+                Global2.addListOfAllScreens(
+                    arrayOf(
+                        FirstActivity::class.java,
+                        SecondActivity::class.java,
+                        ThirdActivity::class.java,
+                        FourthActivity::class.java
+                    )
+                )
+                Global2.addOrder(applicationContext, orderFromFirebase, this)
+            }
+            .addOnFailureListener { e ->
+                e.message?.let { Log.d("getFromDb error", it) }
+                Global2.addListOfAllScreens(
+                    arrayOf(
+                        FirstActivity::class.java,
+                        SecondActivity::class.java,
+                        ThirdActivity::class.java,
+                        FourthActivity::class.java
+                    )
+                )
+                Global2.pageChanger(MainActivity@ this)
+            }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        db = FirebaseFirestore.getInstance()
+        getFromDb()
 
     }
 
