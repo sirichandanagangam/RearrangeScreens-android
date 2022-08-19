@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.siri.RearrangeScreens.MainActivity">
+        <activity android:name="com.siri.RearrangeScreens.MainActivity"
+                android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,13 +19,25 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SecondActivity">
+        <activity
+                android:exported="true"
+                android:name=".FirstActivity">
 
         </activity>
-        <activity android:name=".ThirdActivity">
+        <activity
+                android:exported="true"
+                android:name=".SecondActivity">
 
         </activity>
-        <activity android:name=".FourthActivity">
+        <activity
+                android:exported="true"
+                android:name=".ThirdActivity">
+
+        </activity>
+
+        <activity
+                android:exported="true"
+                android:name=".FourthActivity">
 
         </activity>
     </application>

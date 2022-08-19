@@ -11,8 +11,15 @@ import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.auth.FirebaseUser
+
+import com.google.firebase.database.FirebaseDatabase
+
+
+
 
 private lateinit var database: DatabaseReference
+var list1: MutableList<String> = ArrayList()
 
 object ScreenUtils {
     /**
@@ -23,7 +30,8 @@ object ScreenUtils {
         Log.d("Array returned", "Array returned from method:" + Arrays.toString(str_Array))
         Toast.makeText(context, screenNames[0], Toast.LENGTH_LONG).show()
         // Write a message to the database
-        database = Firebase.database.reference.child("screennames")
+
+        database = Firebase.database.getReference("screennames")
         val storeScreenNames: List<String> = str_Array.toList()
         database.setValue(storeScreenNames).addOnCompleteListener(OnCompleteListener<Void> { task ->
             if (task.isSuccessful()) {
@@ -33,34 +41,31 @@ object ScreenUtils {
             }
 
         });
-
-
     }
 
     /**
      * This function returns the order of screens which the user specifies in the web portal
      */
-    fun returnScreenOrder(): Any? {
 
-        database = Firebase.database.reference.child("screennames")
-        return database.addListenerForSingleValueEvent(object : ValueEventListener {
+    fun returnScreenOrder() {
+
+        database = Firebase.database.reference.child("screenorder")
+        database.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                snapshot.children.forEach {
-                    Log.d(
-                        " Order which we got from database ",
-                        "Order which we got from database :" + (snapshot)
-                    )
-                }
 
+                val children = snapshot!!.children
+
+                children.forEach {
+                    Log.d("agkdfgg", "agkdfgg")
+                    list1.add(it.child("name").value.toString())
+
+                }
             }
 
             override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
+                println(error!!.message)
             }
         })
+
     }
-
 }
-
-
-

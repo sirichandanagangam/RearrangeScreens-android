@@ -15,7 +15,7 @@ android {
 
     defaultConfig {
         minSdkVersion 24
-        targetSdkVersion 29
+        targetSdkVersion 32
         versionCode 1
         versionName project.getProperty("libraryVersion")
 
@@ -38,8 +38,7 @@ android {
 
 }
 
-apply from: 'https://raw.githubusercontent.com/govindsa1011/maven-upload/master/bintray.gradle'
-apply from: 'https://raw.githubusercontent.com/govindsa1011/maven-upload/master/publications.gradle'
+
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
