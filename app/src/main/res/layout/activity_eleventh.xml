@@ -6,7 +6,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Screen 11"
+            android:text="@string/screen_11"
             android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:textSize="@dimen/size_30" />
 </androidx.constraintlayout.widget.ConstraintLayout>
