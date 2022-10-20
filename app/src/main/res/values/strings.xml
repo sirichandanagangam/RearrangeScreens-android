@@ -1,1 +1,22 @@
-<resources></resources>
+<resources>
+    <string name="text_submit">Submit</string>
+    <string name="screen_11">Screen 11</string>
+    <string name="review">Review</string>
+    <string name="back">Back</string>
+    <string name="screen_1">Screen 1</string>
+    <string name="register">Register</string>
+    <string name="screen_4">Screen 4</string>
+    <string name="go">Go</string>
+    <string name="rearrange_screens">Rearrange Screens</string>
+    <string name="screen_9">Screen 9</string>
+    <string name="submit">Submit</string>
+    <string name="screen_2">Screen 2</string>
+    <string name="with_google">With Google</string>
+    <string name="with_twitter">With Twitter</string>
+    <string name="screen_7">Screen 7</string>
+    <string name="screen_6">Screen 6</string>
+    <string name="screen_10">Screen 10</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="screen_3">Screen 3</string>
+    <string name="enter_info">Enter Info</string>
+</resources>
