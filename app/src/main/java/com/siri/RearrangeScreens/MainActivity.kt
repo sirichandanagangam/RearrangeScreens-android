@@ -2,6 +2,7 @@ package com.siri.RearrangeScreens
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlin.collections.ArrayList
@@ -13,16 +14,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun getFromDb() {
-        var orderFromFirebase = ArrayList<Int>()
+    private fun getFromDb() {
         db.collection("ScreenOrder")
-            .document("Order")
+            .document("order2")
             .get()
             .addOnSuccessListener { documentReference ->
-                val data = documentReference.data?.get("list") as ArrayList<String>
-                for (order in data) {
-                    orderFromFirebase.add(Integer.parseInt(order))
-                }
+                Log.d("documentReference data5", documentReference.data?.get("arr").toString())
+                val screenPaths = documentReference.data?.get("arr") as ArrayList<Map<String, Int>>
                 Global2.addListOfAllScreens(
                     arrayOf(
                         FirstActivity::class.java,
@@ -31,10 +29,10 @@ class MainActivity : AppCompatActivity() {
                         FourthActivity::class.java
                     )
                 )
-                Global2.addOrder(applicationContext, orderFromFirebase, this)
+                Global2.addOrder2(applicationContext, screenPaths)
+                Global2.pageChanger(MainActivity@ this)
             }
             .addOnFailureListener { e ->
-                e.message?.let { Log.d("getFromDb error", it) }
                 Global2.addListOfAllScreens(
                     arrayOf(
                         FirstActivity::class.java,
@@ -44,6 +42,7 @@ class MainActivity : AppCompatActivity() {
                     )
                 )
                 Global2.pageChanger(MainActivity@ this)
+                Toast.makeText(applicationContext, "Failed " + e.message, Toast.LENGTH_SHORT).show()
             }
     }
 
@@ -51,8 +50,5 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         db = FirebaseFirestore.getInstance()
         getFromDb()
-
     }
-
-
 }
