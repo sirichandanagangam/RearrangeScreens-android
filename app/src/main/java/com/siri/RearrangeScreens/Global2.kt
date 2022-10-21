@@ -29,18 +29,17 @@ class Global2 {
             screenPaths = myarray
         }
 
-
         fun pageChanger(activity: Activity, screenNum: Int = -5, state: Int = 0) {
-
             if (screenNum == -5) { // start activity
                 val active = screenPaths[0].getValue("current")
-                activity.startActivity(Intent(activity, screenListFromDatabase[active-1] as Class<*>))
+                activity.startActivity(Intent(activity, screenListFromDatabase[active - 1] as Class<*>))
             } else {
                 val active = getIndexOrderInPath(screenNum)
-                val nextActivity = if (state == 0)
+                val nextActivity = if (state == 0) {
                     screenPaths[active].getValue("one") - 1
-                else
+                } else {
                     screenPaths[active].getValue("two") - 1
+                }
 
                 when (nextActivity) {
                     -1 -> {
@@ -63,13 +62,11 @@ class Global2 {
                         )
                     }
                 }
-
             }
         }
 
         private fun getIndexOrderInPath(num: Int): Int {
             return screenPaths.map { it.getValue("current") }.indexOf(num)
         }
-
     }
 }
