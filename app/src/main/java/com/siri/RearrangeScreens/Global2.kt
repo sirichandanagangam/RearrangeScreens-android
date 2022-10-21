@@ -12,13 +12,11 @@ class Global2 {
 
         fun addListOfAllScreens(screensList: Array<Any>) {
             screenListFromDatabase.clear()
-            for (activity in screensList) {
-                screenListFromDatabase.add(activity)
-            }
+            screensList.forEach { screenListFromDatabase.add(it) }
         }
 
         fun addOrder2(context: Context, myarray: ArrayList<Map<String, Int>>) {
-            if (myarray.size != screenListFromDatabase.size) {
+            if ((myarray.size == 0) && (myarray.size != screenListFromDatabase.size)) {
                 Toast.makeText(
                     context,
                     "Activity list size does not match with order size",
@@ -32,7 +30,12 @@ class Global2 {
         fun pageChanger(activity: Activity, screenNum: Int = -5, state: Int = 0) {
             if (screenNum == -5) { // start activity
                 val active = screenPaths[0].getValue("current")
-                activity.startActivity(Intent(activity, screenListFromDatabase[active - 1] as Class<*>))
+                activity.startActivity(
+                    Intent(
+                        activity,
+                        screenListFromDatabase[active - 1] as Class<*>
+                    )
+                )
             } else {
                 val active = getIndexOrderInPath(screenNum)
                 val nextActivity = if (state == 0) {
