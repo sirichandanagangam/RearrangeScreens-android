@@ -6,19 +6,15 @@ import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class ThirdActivity : AppCompatActivity() {
-    lateinit var b4: Button
+    lateinit var enterInfo: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
-        b4 = findViewById(R.id.simpleButton)
-        b4.setOnClickListener(View.OnClickListener {
-            Global2.pageChanger(ThirdActivity@ this)
-        })
-    }
-
-    override fun onBackPressed() {
-        super.onBackPressed()
-        Global2.screenNum -= 1
+        enterInfo = findViewById(R.id.enter_info)
+        enterInfo.setOnClickListener(
+            View.OnClickListener {
+                Global2.pageChanger(this, 3)
+            }
+        )
     }
 }
-
