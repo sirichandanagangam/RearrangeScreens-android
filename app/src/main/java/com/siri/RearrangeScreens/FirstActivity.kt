@@ -1,26 +1,22 @@
 package com.siri.RearrangeScreens
 
-
-import android.view.View
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class FirstActivity : AppCompatActivity() {
-    lateinit var b1: Button
+    lateinit var login: Button
+    lateinit var register: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first)
-        b1 = findViewById(R.id.simpleButton)
-        b1.setOnClickListener(View.OnClickListener {
-            Global2.pageChanger(FirstActivity@ this)
-        })
-    }
-
-    override fun onBackPressed() {
-        super.onBackPressed()
-        Global2.screenNum -= 1
+        login = findViewById(R.id.login)
+        login.setOnClickListener {
+            Global2.pageChanger(this, 1)
+        }
+        register = findViewById(R.id.register)
+        register.setOnClickListener {
+            Global2.pageChanger(this, 1, 1)
+        }
     }
 }
-
-
