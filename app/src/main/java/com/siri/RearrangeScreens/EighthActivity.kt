@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class EighthActivity:AppCompatActivity() {
+class EighthActivity : AppCompatActivity() {
     lateinit var submit: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +14,7 @@ class EighthActivity:AppCompatActivity() {
         submit = findViewById(R.id.submit8)
 
         submit.setOnClickListener {
-            Global2.pageChanger(this,8)
+            Global2.pageChanger(this, 8)
         }
     }
 }

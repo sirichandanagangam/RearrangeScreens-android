@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class FifthActivity:AppCompatActivity() {
+class FifthActivity : AppCompatActivity() {
     lateinit var review: Button
     lateinit var back: Button
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,11 +15,10 @@ class FifthActivity:AppCompatActivity() {
         back = findViewById(R.id.back5)
 
         review.setOnClickListener {
-            Global2.pageChanger(this,5)
+            Global2.pageChanger(this, 5)
         }
         back.setOnClickListener {
-            Global2.pageChanger(this,5, 1)
+            Global2.pageChanger(this, 5, 1)
         }
-
     }
 }

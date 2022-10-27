@@ -26,7 +26,14 @@ class MainActivity : AppCompatActivity() {
                         FirstActivity::class.java,
                         SecondActivity::class.java,
                         ThirdActivity::class.java,
-                        FourthActivity::class.java
+                        FourthActivity::class.java,
+                        FifthActivity::class.java,
+                        SixthActivity::class.java,
+                        SeventhActivity::class.java,
+                        EighthActivity::class.java,
+                        NinthActivity::class.java,
+                        TenthActivity::class.java,
+                        EleventhActivity::class.java
                     )
                 )
                 Global2.addOrder2(applicationContext, screenPaths)
@@ -38,7 +45,14 @@ class MainActivity : AppCompatActivity() {
                         FirstActivity::class.java,
                         SecondActivity::class.java,
                         ThirdActivity::class.java,
-                        FourthActivity::class.java
+                        FourthActivity::class.java,
+                        FifthActivity::class.java,
+                        SixthActivity::class.java,
+                        SeventhActivity::class.java,
+                        EighthActivity::class.java,
+                        NinthActivity::class.java,
+                        TenthActivity::class.java,
+                        EleventhActivity::class.java
                     )
                 )
                 Global2.pageChanger(MainActivity@ this)

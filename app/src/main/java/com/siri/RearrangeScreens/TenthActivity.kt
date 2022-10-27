@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class TenthActivity:AppCompatActivity() {
+class TenthActivity : AppCompatActivity() {
     lateinit var dashboard: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,8 +13,7 @@ class TenthActivity:AppCompatActivity() {
 
         dashboard = findViewById(R.id.dashboard)
         dashboard.setOnClickListener {
-            Global2.pageChanger(this,10)
+            Global2.pageChanger(this, 10)
         }
     }
-
 }
