@@ -21,26 +21,12 @@ class MainActivity : AppCompatActivity() {
             .addOnSuccessListener { documentReference ->
                 Log.d("documentReference data5", documentReference.data?.get("arr").toString())
                 val screenPaths = documentReference.data?.get("arr") as ArrayList<Map<String, Int>>
-                Global2.addListOfAllScreens(
-                    arrayOf(
-                        FirstActivity::class.java,
-                        SecondActivity::class.java,
-                        ThirdActivity::class.java,
-                        FourthActivity::class.java
-                    )
-                )
+                addTheListOfAllScreens()
                 Global2.addOrder2(applicationContext, screenPaths)
                 Global2.pageChanger(MainActivity@ this)
             }
             .addOnFailureListener { e ->
-                Global2.addListOfAllScreens(
-                    arrayOf(
-                        FirstActivity::class.java,
-                        SecondActivity::class.java,
-                        ThirdActivity::class.java,
-                        FourthActivity::class.java
-                    )
-                )
+                addTheListOfAllScreens()
                 Global2.pageChanger(MainActivity@ this)
                 Toast.makeText(applicationContext, "Failed " + e.message, Toast.LENGTH_SHORT).show()
             }
@@ -50,5 +36,23 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         db = FirebaseFirestore.getInstance()
         getFromDb()
+    }
+
+    private fun addTheListOfAllScreens() {
+        Global2.addListOfAllScreens(
+            arrayOf(
+                FirstActivity::class.java,
+                SecondActivity::class.java,
+                ThirdActivity::class.java,
+                FourthActivity::class.java,
+                FifthActivity::class.java,
+                SixthActivity::class.java,
+                SeventhActivity::class.java,
+                EighthActivity::class.java,
+                NinthActivity::class.java,
+                TenthActivity::class.java,
+                EleventhActivity::class.java
+            )
+        )
     }
 }
