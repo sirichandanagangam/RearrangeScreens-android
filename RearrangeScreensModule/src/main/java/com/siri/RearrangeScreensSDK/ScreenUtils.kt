@@ -53,17 +53,11 @@ object ScreenUtils {
         database.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
 
-                val children = snapshot!!.children
-
-                children.forEach {
-                    Log.d("agkdfgg", "agkdfgg")
-                    list1.add(it.child("name").value.toString())
-
-                }
+               
             }
 
             override fun onCancelled(error: DatabaseError) {
-                println(error!!.message)
+                
             }
         })
 
