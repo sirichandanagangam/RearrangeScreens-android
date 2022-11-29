@@ -19,12 +19,12 @@ jobs:
       - name: Build debug
         run: bash ./gradlew build jacocoTestReport assembleAndroidTest
       - name: run tests
-        uses: vgaidarji/android-github-actions-emulator@v1.0.1
+        uses: malinskiy/action-android/emulator-run-cmd@release/0.1.3
         with:
-          api-level: 30
+          api-level: 25
           target: google_apis
           arch: x86_64
-          script: ./gradlew connectedCheck
+          cmd: ./gradlew connectedCheck
       - name: Upload coverage to Codecov
         run: |
           curl -Os https://uploader.codecov.io/latest/macos/codecov
