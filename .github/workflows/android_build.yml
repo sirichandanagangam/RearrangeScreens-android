@@ -19,7 +19,7 @@ jobs:
       - name: Build debug
         run: bash ./gradlew build jacocoTestReport assembleAndroidTest
       - name: run tests
-        uses: ReactiveCircus/android-emulator-runner@v2
+        uses: vgaidarji/android-github-actions-emulator@v1.0.1
         with:
           api-level: 30
           target: google_apis
