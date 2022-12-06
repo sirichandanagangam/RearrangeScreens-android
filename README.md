@@ -71,8 +71,8 @@ Reorder Screens is a platform that enables you to rearrange the screens of a mob
 
 
 ### Built With
+* <a href="https://mockk.io/doc/kotlin-logo.png" target="_blank"><img src="https://mockk.io/doc/kotlin-logo.png" width="87" height="50" alt=" kotlin" style="border:1px solid black;" /></a>
 
-* [![Kotlin][Kotlin][Kotlin-url]
 * [![React][React.js]][React-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
