@@ -19,7 +19,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -27,26 +26,17 @@
 <br />
 <div align="center">
   <a href="https://github.com/sirichandanagangam/RearrangeScreens-android">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="logo-color.png" alt="Logo" width="100" height="100">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Reorder Screens</h3>
 
   <p align="center">
-    project_description
+    Change the order of screens of the mobile application without shipping a new executable of the application.
     <br />
-    <a href="https://github.com/sirichandanagangam/RearrangeScreens-android"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://oregonstate-innovationlab.atlassian.net/wiki/spaces/RS/pages/29949953/PRODUCT+REQUIREMENTS"><strong>Explore the docs »</strong></a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -65,10 +55,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -78,9 +64,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 Reorder Screens is a platform that enables you to rearrange the screens of a mobile application without having to make any changes to the underlying source code and so without having to re-upload the build to an app marketplace. This can help reduce development costs and speed up deployment. While Reorder Screens is a prototype built for Google’s Android platform and so focuses on obviating the need to re-upload to Google Play, Google’s app marketplace, it is a proof of concept that is not specific to Google Play and Android. The same idea can be applied to Apple’s App Store and IOS, or in principle to any other distribution platform. Reorder Screens includes a Software Development Kit (SDK), a web portal, and a back-end that connects the two. The web portal shows a screen flowchart for the mobile application, which reflects the actual order in which the screens appear in the mobile application. Using the web portal, the Product Owner can change the screen order without having to lean on the help of a software developer. The Android SDK has the logic to rearrange the screens of the Android mobile application based on the order received from the web portal via Reorder Screen’s back-end.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -89,7 +72,7 @@ Reorder Screens is a platform that enables you to rearrange the screens of a mob
 
 ### Built With
 
-* [![Kotlin][Kotlin]][Kotlin-url]
+* [![Kotlin][Kotlin][Kotlin-url]
 * [![React][React.js]][React-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -101,12 +84,9 @@ Reorder Screens is a platform that enables you to rearrange the screens of a mob
 Steps to setup this project locally : 
 
 ### Prerequisites
-
-* Install Java
-
+* Java
 
 ### Installation
-
 ```sh
 git clone https://github.com/sirichandanagangam/RearrangeScreens-android.git
 git remote add RearrangeScreens-android https://github.com/sirichandanagangam/RearrangeScreens-android.git
@@ -114,19 +94,43 @@ git fetch
 ```
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Screenshots
+<table>
+  
+<td>
+<img src="1.png" alt="Logo" width="250" height="350">
+  </td>
+  <td>
+<img src="2.png" alt="Logo" width="250" height="350">
+  </td>
+  <td>
+<img src="3.png" alt="Logo" width="250" height="350">
+  </td>
+</table>
+<table>
+ 
+ <td> 
+<img src="4.png" alt="Logo" width="250" height="350">
+  </td>
+  <td>
+<img src="5.png" alt="Logo" width="250" height="350">
+  </td>
+  <td>
+<img src="6.png" alt="Logo" width="250" height="350">
+  </td>
+ </table>
+ <table>
+  <td>
+<img src="7.png" alt="Logo" width="250" height="350">
+    </td>
+    <td>
+<img src="8.png" alt="Logo" width="250" height="350">
+</td>
+</th>
+</table>
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- CONTACT -->
@@ -151,6 +155,8 @@ It was my parents' sacrifices that enabled me to remain committed to my educatio
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-url]: https://www.linkedin.com/in/siri-chandana-gangam-b27716157/
-[product-screenshot]: images/screenshot.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[Kotlin]: https://mockk.io/doc/kotlin-logo.png
+[React-url]:https://reactjs.org/
+[Kotlin-url]:https://kotlinlang.org/
 
