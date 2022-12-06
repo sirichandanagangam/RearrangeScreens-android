@@ -69,9 +69,8 @@ Reorder Screens is a platform that enables you to rearrange the screens of a mob
 
 
 ### Built With
-* <a href="https://mockk.io/doc/kotlin-logo.png" target="_blank"><img src="https://mockk.io/doc/kotlin-logo.png" width="87" height="50" alt=" kotlin" style="border:1px solid black;" /></a>
+<a href="https://mockk.io/doc/kotlin-logo.png" target="_blank"><img src="https://mockk.io/doc/kotlin-logo.png" width="87" height="50" alt=" kotlin" style="border:1px solid black;" /></a>
 
-* [![React][React.js]][React-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,7 +81,7 @@ Reorder Screens is a platform that enables you to rearrange the screens of a mob
 Steps to setup this project locally : 
 
 ### Prerequisites
-* Java
+Java
 
 ### Installation
 ```sh
@@ -153,8 +152,6 @@ It was my parents' sacrifices that enabled me to remain committed to my educatio
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [linkedin-url]: https://www.linkedin.com/in/siri-chandana-gangam-b27716157/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [Kotlin]: https://mockk.io/doc/kotlin-logo.png
-[React-url]:https://reactjs.org/
 [Kotlin-url]:https://kotlinlang.org/
 
