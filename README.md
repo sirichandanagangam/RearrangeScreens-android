@@ -26,10 +26,8 @@
 <br />
 <div align="center">
   <a href="https://github.com/sirichandanagangam/RearrangeScreens-android">
-    <img src="logo-color.png" alt="Logo" width="100" height="100">
+    <img src="logo.png" alt="Logo" width="500" height="100">
   </a>
-
-<h3 align="center">Reorder Screens</h3>
 
   <p align="center">
     Change the order of screens of the mobile application without shipping a new executable of the application.
@@ -92,7 +90,7 @@ git clone https://github.com/sirichandanagangam/RearrangeScreens-android.git
 git remote add RearrangeScreens-android https://github.com/sirichandanagangam/RearrangeScreens-android.git
 git fetch
 ```
-
+The code of the website in which you have to change the order is https://github.com/sirichandanagangam/RearrangeScreens-Website
 <!-- USAGE EXAMPLES -->
 ## Screenshots
 <table>
