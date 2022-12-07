@@ -88,7 +88,7 @@ the screens of the Android mobile application based on the order received from t
 
 <!-- GETTING STARTED -->
 ## Getting Started
-Steps to setup this project locally : 
+Steps to setup this project locally :
 
 ### Prerequisites
 Java
@@ -99,7 +99,7 @@ git clone https://github.com/sirichandanagangam/RearrangeScreens-android.git
 git remote add RearrangeScreens-android https://github.com/sirichandanagangam/RearrangeScreens-android.git
 git fetch
 ```
-The code of the web portal in which you have to change the order is https://github.com/sirichandanagangam/RearrangeScreens-Website
+The code of the web portal in which you have to change the order is [here]
 <!-- USAGE EXAMPLES -->
 ## Screenshots
 <table>
@@ -115,8 +115,8 @@ The code of the web portal in which you have to change the order is https://gith
   </td>
 </table>
 <table>
- 
- <td> 
+
+ <td>
 <img src="4.png" alt="Logo" width="250" height="350">
   </td>
   <td>
@@ -164,3 +164,4 @@ Yashoda in reviewing my code and helping me in maintaining the coding standards 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [LinkedIn]:https://www.linkedin.com/in/siri-chandana-gangam-b27716157/
+[here]:https://github.com/sirichandanagangam/RearrangeScreens-Website
