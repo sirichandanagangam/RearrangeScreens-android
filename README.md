@@ -62,7 +62,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Reorder Screens is a platform that enables you to rearrange the screens of a mobile application without having to make any changes to the underlying source code and so without having to re-upload the build to an app marketplace. This can help reduce development costs and speed up deployment. While Reorder Screens is a prototype built for Google’s Android platform and so focuses on obviating the need to re-upload to Google Play, Google’s app marketplace, it is a proof of concept that is not specific to Google Play and Android. The same idea can be applied to Apple’s App Store and IOS, or in principle to any other distribution platform. Reorder Screens includes a Software Development Kit (SDK), a web portal, and a back-end that connects the two. The web portal shows a screen flowchart for the mobile application, which reflects the actual order in which the screens appear in the mobile application. Using the web portal, the Product Owner can change the screen order without having to lean on the help of a software developer. The Android SDK has the logic to rearrange the screens of the Android mobile application based on the order received from the web portal via Reorder Screen’s back-end.
+Reorder Screens is a platform that enables you to rearrange the screens of a mobile application without having to make any changes to the underlying source code and so without having to re-upload the build to an app marketplace. This can help reduce development costs and speed up deployment. While Reorder Screens is a prototype built for Google’s Android platform and so focuses on obviating the need to re-upload to Google Play, Google’s app marketplace, it is a proof of concept that is not specific to Google Play and Android. The same idea can be applied to Apple’s App Store and iOS, or in principle to any other distribution platform. Reorder Screens includes a Software Development Kit (SDK), a web portal, and a backend that connects the two. The web portal shows a screen flowchart for the mobile application, which reflects the actual order in which the screens appear in the mobile application. Using the web portal, the Product Owner can change the screen order without having to lean on the help of a software developer. The Android SDK has the logic to rearrange the screens of the Android mobile application based on the order received from the web portal via Reorder Screen’s backend.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +89,7 @@ git clone https://github.com/sirichandanagangam/RearrangeScreens-android.git
 git remote add RearrangeScreens-android https://github.com/sirichandanagangam/RearrangeScreens-android.git
 git fetch
 ```
-The code of the website in which you have to change the order is https://github.com/sirichandanagangam/RearrangeScreens-Website
+The code of the web portal in which you have to change the order is https://github.com/sirichandanagangam/RearrangeScreens-Website
 <!-- USAGE EXAMPLES -->
 ## Screenshots
 <table>
@@ -133,7 +133,7 @@ The code of the website in which you have to change the order is https://github.
 <!-- CONTACT -->
 ## Contact
 
-Siri Chandana Gangam - [Linkedin](https://www.linkedin.com/in/siri-chandana-gangam-b27716157/) - gangamsirichandana@gmail.com
+Siri Chandana Gangam - [LinkedIn](https://www.linkedin.com/in/siri-chandana-gangam-b27716157/) - gangamsirichandana@gmail.com
 
 Project Link: [https://github.com/sirichandanagangam/RearrangeScreens-android](https://github.com/sirichandanagangam/RearrangeScreens-android)
 
